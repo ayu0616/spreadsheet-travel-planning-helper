@@ -1,0 +1,29 @@
+{
+    "name": "gas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "push": "git push & clasp push"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/cheerio": "^0.22.31",
+        "@types/google-apps-script": "^1.0.55"
+    },
+    "devDependencies": {
+        "@types/node": "^18.8.5",
+        "@typescript-eslint/eslint-plugin": "^5.40.0",
+        "eslint": "^8.25.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard-with-typescript": "^23.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.3.0",
+        "eslint-plugin-promise": "^6.0.1",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.4"
+    }
+}

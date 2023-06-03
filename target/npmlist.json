@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"gas","dependencies":{"@types/cheerio":{"version":"0.22.31"},"@types/google-apps-script":{"version":"1.0.55"}}}
