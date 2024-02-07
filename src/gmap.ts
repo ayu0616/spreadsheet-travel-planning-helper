@@ -4,7 +4,6 @@ const getDriveArriveTime = (departureTime: Date, spots: string) => {
     gmap.setOrigin(origin);
     gmap.setDestination(dest);
     gmap.setMode(Maps.DirectionFinder.Mode.DRIVING);
-    gmap.setDepart(departureTime);
     const route = gmap.getDirections();
     const legs = route.routes[0].legs;
     const duration = legs[0].duration.value;
