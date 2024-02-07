@@ -7,6 +7,7 @@ const getDriveArriveTime = (departureTime: Date, spots: string) => {
     gmap.setDepart(departureTime);
     const route = gmap.getDirections();
     const legs = route.routes[0].legs;
-    const arriveTime = legs[0].arrivalTime;
+    const duration = legs[0].duration.value;
+    const arriveTime = new Date(departureTime.getTime() + duration * 1000);
     return arriveTime;
 };
