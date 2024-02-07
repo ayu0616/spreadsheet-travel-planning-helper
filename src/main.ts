@@ -1,11 +1,9 @@
 /**
  * 編集はローカルのTypeScriptファイルで行い、claspでpushしてください
  * プロジェクトディレクトリのURL：https://drive.google.com/drive/folders/1wYi3mH_1lUCmGrqUVrIxCht5Dolwwono?usp=share_link
-*/
+ */
 
 import * as Cheerio from "cheerio";
-
-const CORS_ANYWHERE_URL = "https://cors-anywhere-zhqzb2nbkq-uc.a.run.app/";
 
 /**
  * メインで実行する関数
@@ -18,7 +16,7 @@ const main = () => {
 
 /**URLからCheerioを返す */
 const createCheerio = (url: string) => {
-    const res = UrlFetchApp.fetch(`${CORS_ANYWHERE_URL}${url}`, { method: "get", headers: { "X-Requested-With": "XMLHttpRequest" } }).getContentText();
+    const res = UrlFetchApp.fetch(url, { method: "get", headers: { "X-Requested-With": "XMLHttpRequest" } }).getContentText();
     const $ = Cheerio.load(res, { decodeEntities: false });
     return $;
 };
